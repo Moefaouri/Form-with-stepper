@@ -210,9 +210,6 @@
     .field-control {
         width: 100%;
     }
-    footer{
-        position: unset;
-    }
     .accordion-header{
         height: 16px;
     }
@@ -222,9 +219,6 @@
     }
     .accordion-header h2 {
         font-size: 20px;
-    }
-    body:has(.tab--3.tab--active) footer{
-        position: absolute;
     }
     body:has(.tab--3.tab--active) .information{
         width: 87vw;
