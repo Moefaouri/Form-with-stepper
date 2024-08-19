@@ -115,6 +115,7 @@ input[type=date]{
 input[type=date], select{
  background: transparent !important;
 }
+
 label{
     font-family:  Century Gothic;
     color: #007BAD;
@@ -125,6 +126,8 @@ label{
 }
 select{
     color: #C1C1C1;
+  width: 100% !important;
+ 
 }
 option{
     color: black;
