@@ -1,0 +1,360 @@
+@media (width > 1210px){
+    .container{
+        width: 1200px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1210px){
+    .tabs--container {
+        width: calc(91vw - 2rem);
+    }
+    .information{
+        width: 91vw;
+    }
+    .butt-properties{
+        padding: 11px 22px;
+    }
+    .title-page h1{
+        font-size: 1.5rem;
+    }
+    form h2, .accordion-title h2 {
+        font-size: 1.4em;
+    }
+    .form-parts{
+        gap: 8px;
+    }
+    .accordion-body{
+        gap: 6px;
+    }
+    .info {
+        column-gap: 50px;
+    }
+    .print-content{
+        gap: 90px;
+    }
+    .print-data {
+        height: 40%;
+        text-wrap: nowrap;
+    }
+    .print-data h2{
+        font-size: 26px;
+
+    }
+    footer{
+        position: fixed;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .tabs--container {
+        width: calc(91vw - 2rem);
+    }
+    .information{
+        width: 91vw;
+    }
+    .butt-properties{
+        padding: 10px 24px;
+    }
+    form h2, .accordion-title h2 {
+        font-size: 1.4em;
+    }
+    .title-page h1{
+        font-size: 1.5rem;
+    }
+    .form-parts{
+        gap: 8px;
+    }
+    .accordion-header h2{
+        font-size: 20px;
+    }
+    .accordion-body {
+        gap: 5px;
+    }
+    .accordion-body p {
+        padding: 6px 10px;
+    }
+    .print-data {
+        height: 41%;
+    }
+    .info{
+        text-wrap: nowrap;
+    }
+    .print-content{
+        gap: 70px;
+    }
+    .print-data h2{
+        font-size: 26px;
+    }
+    footer{
+        position: fixed;
+    }
+
+}
+
+@media only screen and (min-width: 646px) and (max-width: 768px) {
+    .tabs--container {
+        width: calc(92vw - 2rem);
+    }
+    .information{
+        width: 92vw;
+    }
+    .form-parts {
+        gap: 8px;
+    }
+    form h2, .accordion-title h2 {
+        font-size: 1.3em;
+    }
+    .title-page{
+        font-size: 0.9rem;
+    }
+    .butt-properties {
+        padding: 10px 22px;
+    }
+    .accordion-item {
+        margin-bottom: 0.6rem;
+    }
+    .accordion-header{
+        height: 12px;
+    }
+    .accordion-header h2{
+        font-size: 20px;
+    }
+    .accordion-body{
+        gap: 1px;
+    }
+    .print-data{
+        height: 47%;
+        text-wrap: nowrap;
+        width: 90%;
+    }
+    .print-data h2 {
+        font-size: 24px;
+    }
+    .print-content {
+        gap: 9px;
+    }
+    .info{
+        column-gap: 40px;
+    }
+    footer{
+        position: fixed;
+    }
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 645px){
+    .tabs--container {
+        width: calc(86vw - 2rem);
+    }
+    .title-page h1 {
+        font-size: 1.6rem;
+    }
+    .form-title {
+        grid-column: 1 / span 2;
+        font-size: .9em;
+    }
+    .form-parts {
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto;
+        gap: 0;
+    }
+    .information{
+        width: 86vw;
+    }
+    .butt-properties{
+        padding: 12px 20px;
+    }
+    form h2, .accordion-title h2 {
+        font-size: 1.3em;
+    }
+    .accordion-header {
+        height: 10px;
+    }
+    .accordion-header h2{
+        font-size: 20px;
+    }
+    .accordion-body{
+        font-size:14px;
+        gap: 5px;
+    }
+    .info {
+        text-wrap: nowrap;
+        column-gap: 30px;
+        font-size: 16px;
+    }
+    .print-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .print-data h2{
+        font-size: 22px;
+    }
+    .print-data {
+        height: auto;
+        width: 97vw;
+    }
+    .print-img{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .print-img img {
+        height: 140px;
+        width: 165px;
+        padding: unset;
+    
+    }
+    footer{
+        position: fixed;
+    }
+
+
+}
+@media only screen and (min-width: 321px) and (max-width: 425px){
+    .tabs--container {
+        width: calc(86vw - 2rem);
+    }
+    .information{
+        width: 86vw;
+    }
+    .form-title{
+        grid-column: unset;
+    }
+    .form-parts {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 5px;
+    }
+    .field-control {
+        width: 100%;
+    }
+    footer{
+        position: unset;
+    }
+    .accordion-header{
+        height: 16px;
+    }
+    .accordion-body {
+        font-size: 14px;
+        gap: 6px;
+    }
+    .accordion-header h2 {
+        font-size: 20px;
+    }
+    body:has(.tab--3.tab--active) footer{
+        position: absolute;
+    }
+    body:has(.tab--3.tab--active) .information{
+        width: 87vw;
+        padding: 14px;
+        height: 600px;    
+    }
+    .print-content{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .print-data {
+        height: auto;
+        width: 97vw;
+        text-wrap: wrap;
+    }
+    .print-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 7px;
+    }
+    .print-img img{
+        height: 152px;
+        width: 167px;
+        padding: unset;
+        margin-bottom: 10px;
+    }
+    .butt-properties{
+        margin-bottom: 7px;
+        padding: 12px 22px;
+    }
+    .info{
+        column-gap: 7px;
+        font-size: 14px;
+    }
+    footer{
+        position: fixed;
+    }
+    .print-data h2{
+        font-size: 24px;
+    }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 320px)  {
+    .tabs--container {
+        width: calc(91vw - 2rem);
+    }
+    .title-page h1 {
+        font-size: 1.6rem;
+    }
+    .information{
+        width: 82vw;
+    }
+    body:has(.tab--3.tab--active) .information{
+        padding: 14px;
+        width: 80vw;
+    }
+    .info {
+        padding-left: 19px;    
+        column-gap: 0;
+        text-wrap: wrap;
+        font-size: 14px;
+    }
+    .info p{
+        margin-top: 3px;
+    }
+    form h2, .accordion-title h2 {
+        font-size: 1.3em;
+    }
+    .accordion-header {
+        height: 10px;
+    }
+    .accordion-header h2 {
+        font-size: 18px;
+    }
+    .accordion-body {
+        font-size: 11px;
+        gap: 3px;
+    }
+    .print-data {
+        width: 93vw;
+        height: auto;
+        text-wrap: wrap;
+    }
+    .print-data h2{
+        font-size: 24px;
+    }
+    .butt-properties{
+        padding: 10px 20px;
+    }
+    .field-control{
+        width: 100%;
+    } 
+    .form-parts {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .form-title{
+        grid-column: unset;
+    }
+    .print-img{
+        text-align: center;
+    }
+    .print-img img{
+        padding: unset;
+        height: 130px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .print-content{
+        flex-direction: column;
+        gap: 25px;
+    }
+    footer{
+        position: fixed;
+    }
+}

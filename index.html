@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- style for Jquery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Form with stepper</title>
+    <!-- jQuery file -->
+    <script defer src="./src/js/script.js"></script>
+  </head>
+  <body>
+    <!-- title page -->
+    <div class="title-page"><h1>Personal Information</h1></div>
+ 
+    <div class="flex-wrapper">
+    <!-- for line above form -->
+    <div class="container">
+      <div class="tabs">
+        <div class="tabs--container">
+          <span class="tab tab--1 tab--active">1</span>
+          <span class="tab--line tab--active tab--1"></span>
+          <span class="tab tab--2">2</span>
+          <span class="tab--line tab--2"></span>
+          <span class="tab tab--3">3</span>
+        </div>
+      </div>
+      <!-- form -->
+      <div class="information">
+        <div class="form-content">
+          <form action="#" autocomplete="off" method="post">
+            <!-- first part of form -->
+            <div class="form-parts form-part1 " id="form1"  >
+              <div class="form-title">
+                <h2>
+                  <div class="line"></div>
+                  Basic Information
+                </h2>
+              </div>
+
+              <div class="field-control" >
+                <label for="FirstName">First Name <span>*</span></label>
+                <input 
+                  type="text"
+                  name="FirstName"
+                  id="FirstName"
+                  placeholder="First Name"
+                />
+                <span class="feedback"> </span>
+              </div>
+              <div class="field-control">
+                <label for="MiddleName">Middle Name <span>*</span></label>
+                <input
+                  type="text"
+                  name="MiddleName"
+                  id="MiddleName"
+                  placeholder="Middle Name"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="LastName">Last Name <span>*</span></label>
+                <input
+                  type="text"
+                  name="LastName"
+                  id="LastName"
+                  placeholder="Last Name"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="NationalID">National ID <span>*</span></label>
+                <input
+                  type="text"
+                  name="NationalID"
+                  id="NationalID"
+                  placeholder="National ID"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="gen"> Gender<span>*</span> </label>
+                <select id="gen"  name="Gender">
+                  <option name="Male" selected>Male</option>
+                  <option name="Female">Female</option>
+                </select>
+                <span class="feedback"></span>
+              </div>
+              <div class="field-control">
+                <label for="DOB">Birth Of Date <span>*</span></label>
+                <input
+                  placeholder="Select DOF"
+                  class="form--input"
+                  type="text"
+                  id="DOB"
+                /><img class="BOBimg" src="./src/img/calendar.png" />
+                <span class="feedback"> </span>
+              </div>
+              <div class="field-control">
+                <label for="DOC">Birth Of Country <span>*</span></label>
+                <input
+                placeholder="Select Country"
+                type="text"
+                id="DOC"
+              />  <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="status">status<span>*</span></label>
+                <select name="status" id="status"  placeholder="Single">
+                    <option value="Single" name="Single" selected >Single</option>
+                    <option value="married" name="married">Married</option>
+
+                </select>
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control hidden" id="wn">
+                <label for="wifeName">Wife Name<span>*</span></label>
+                <input
+                  type="text"
+                  name="wifeName"
+                  id="wifeName"
+                  placeholder="Wife Name"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control hidden" id="nok">
+                <label for="numberOfKids">Number Of Kids<span>*</span></label>
+                <input
+                  type="number"
+                  name="numberOfKids"
+                  id="numberOfKids"
+                  placeholder="0"
+                />
+                <span class="feedback"> </span>
+              </div>
+            </div>
+            <!-- second part of form -->
+            <div class="form-parts form-part2 hidden" id="form2">
+              <div class="form-title">
+                <h2>
+                  <div class="line"></div>
+                  Contact Information
+                </h2>
+              </div>
+              <div class="field-control">
+                <label for="con">Country<span>*</span></label>
+                <input
+                  type="text"
+                  name="con"
+                  id="con"
+                  placeholder="Select Country"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="city">City<span>*</span></label>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Select City"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="Area">Area<span>*</span></label>
+                <input 
+                name="Area" 
+                id="Area"
+                placeholder="Select Area" 
+                type="text"  />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="Street">Street Name<span>*</span></label>
+                <input
+                  type="text"
+                  name="Street"
+                  id="Street"
+                  placeholder="Street Name"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="bldno">Building Number<span>*</span></label>
+                <input
+                  type="number"
+                  name="bldno"
+                  id="bldno"
+                  placeholder="1"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="phone">phone Number<span>*</span></label>
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  placeholder="077xxxxxxx"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="email">Email Address</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control">
+                <label for="social">Social Media<span>*</span></label>
+                <select name="social" id="social" >
+                  <option value="" disabled selected>
+                    Select Social Media
+                  </option>
+                  <option value="facebook">Facebook</option>
+                  <option value="instagram">instagram</option>
+                  <option value="x">x</option>
+                  <option value="SnapChat">SnapChat</option>
+                  <option value="TikTOK">TikTOK</option>
+                </select>
+                <span class="feedback"> </span>
+
+              </div>
+              <div class="field-control hidden" id="acc" >
+                <label for="account">Account Link<span>*</span></label>
+                <input
+                  type="text"
+                  name="account"
+                  id="account"
+                  placeholder="Account Link"
+                />
+                <span class="feedback"> </span>
+              </div>
+               <!-- next step button -->
+            </div>
+            <div class="button-control " >
+              <input type="submit"  value="NextStep" class="butt-properties" id="btnNext" />
+            </div>
+          </form>
+          <!-- part3 of task accordion -->
+         <div  class="form-part3 hidden">
+          <header class="accordion-title" >
+            <!-- accordion title -->
+            <h2>Result Information</h2>
+          </header>
+          <div class="accordion ">
+            <!-- item number 1  -->
+            <div class="accordion-item ">
+              <div class="accordion-header part1">
+                <h2>Basic Information</h2>
+                <i class="fa-solid fa-angle-up clickbasic "></i>
+              </div>
+
+              <div class="accordion-body"  id="basic">
+                <strong class="info-label">Full Name</strong>
+                    <p class="info-content" id="FullName"></p>
+
+                    <strong class="info-label">National ID</strong>
+                    <p class="info-content"> </p>
+
+                    <strong class="info-label">Gender</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Birth Of Date</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label" id="age-label">Age</strong>
+                    <p class="info-content" id="age"></p>
+
+                    <strong class="info-label">Birth Of Country</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Status</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Wife Name</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Number Of Kids</strong>
+                    <p class="info-content"></p>
+              </div>
+            </div>
+              <!-- item number 2 -->
+            <div class="accordion-item " >
+              <div class="accordion-header part2">
+                <h2>Contact Information</h2>
+                <i class="fa-solid fa-angle-down clickcontact "></i>
+              </div>
+              <div class="accordion-body hidden" id="contact">
+                <strong class="info-label">Country</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">City</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Area</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Street Name</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Building No</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Phone Number</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Email Address</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Social Media</strong>
+                    <p class="info-content"></p>
+
+                    <strong class="info-label">Account Link</strong>
+                    <p class="info-content"></p>
+              </div>
+
+              <div class="button-control ">
+                <input type="button" value="Print" class="butt-properties" />
+              </div>
+            </div>
+          </div >
+        </div>
+        <!-- part four of task print page -->
+          <div class="overlay" style="display: none;"> </div> 
+            <div class="print-data" style="display: none;">
+              <h2>Print information <button>&times;</button></h2>
+              <div class="print-content">
+                <div class="info">
+                    <!-- print page content -->
+                </div>
+
+                <div class="print-img">
+                  <img
+                    src="./src/img/qr-code.png"
+                    alt="qr-code"
+                    height="32px"
+                    width="32px"
+                  />
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        © Copyright By
+        <a target="_blank" href="https://www.linkedin.com/in/el-fauri/"
+          >Mohammad Elfauri</a
+        >
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
