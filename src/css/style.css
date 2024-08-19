@@ -291,7 +291,7 @@ footer {
     justify-content: center;
     margin-top: 50px;
     padding: 20px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
   }
