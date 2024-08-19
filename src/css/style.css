@@ -109,8 +109,10 @@ input ,select{
     cursor: pointer;
     color: #007bad;
 }
-input[type=date], select{
+input[type=date]{
  width: 90% !important;
+}
+input[type=date], select{
  background: transparent !important;
 }
 label{
