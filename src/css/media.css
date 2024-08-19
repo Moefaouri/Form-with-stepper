@@ -39,9 +39,6 @@
         font-size: 26px;
 
     }
-    footer{
-        position: fixed;
-    }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .tabs--container {
@@ -83,10 +80,6 @@
     .print-data h2{
         font-size: 26px;
     }
-    footer{
-        position: fixed;
-    }
-
 }
 
 @media only screen and (min-width: 646px) and (max-width: 768px) {
@@ -134,10 +127,6 @@
     .info{
         column-gap: 40px;
     }
-    footer{
-        position: fixed;
-    }
-
 }
 
 @media only screen and (min-width: 426px) and (max-width: 645px){
@@ -201,11 +190,6 @@
         padding: unset;
     
     }
-    footer{
-        position: fixed;
-    }
-
-
 }
 @media only screen and (min-width: 321px) and (max-width: 425px){
     .tabs--container {
@@ -274,9 +258,6 @@
     .info{
         column-gap: 7px;
         font-size: 14px;
-    }
-    footer{
-        position: fixed;
     }
     .print-data h2{
         font-size: 24px;
@@ -353,8 +334,5 @@
     .print-content{
         flex-direction: column;
         gap: 25px;
-    }
-    footer{
-        position: fixed;
     }
 }
