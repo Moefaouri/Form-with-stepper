@@ -243,6 +243,7 @@ $('#account').prop('required',true)
  $("input[value='Print'],.overlay,.print-data h2 button").on("click",function(){
 
     $('.overlay,.print-data').fadeToggle(500);
+     $('body').toggleClass("modal-open");
      })
 // for accordion  button open and close
 $('.accordion-header').on('click', function(){
